@@ -31,7 +31,7 @@ You have 10 guesses to get it.''')
             game_over = True
             break
 
-        elif user_answer[0] in computer_answer or user_answer[1] in computer_answer or user_answer[1] in computer_answer:
+        elif user_answer[0] in computer_answer or user_answer[1] in computer_answer or user_answer[2] in computer_answer:
             for index, x in enumerate(computer_answer):
                 if x == user_answer[index]:
                    print("Fermi")
