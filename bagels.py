@@ -11,9 +11,11 @@ When I say:    That means:
   Bagels       No digit is correct.
 I have thought up a number.
 You have 10 guesses to get it.''')
+    digit_1 = str(random.randint(0,9))
+    digit_2 = str(random.randint(0,9))
+    digit_3 = str(random.randint(0,9))
 
-    computer_answer = str(random.randint(100,999))
-    #debug print(computer_answer) 
+    computer_answer = f'{digit_1}{digit_2}{digit_3}'
     max_tries = 10
     current_guess = 0
     print("I am thinking of a 3 digit number. Try to guess what it is.\n")
